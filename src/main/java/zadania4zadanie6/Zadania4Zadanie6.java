@@ -36,12 +36,16 @@ public class Zadania4Zadanie6 {
                 letter = textDivided[i];
                 if (letter == alfabet[j]) {
                     encodedText = encodedText + alfabet[(j + code) % 27];
+                } else if (letter != alfabet[j] && j == (alfabet.length - 1)) {
+                    break;
                 }
             }
         }
 
-        System.out.println(encodedText);
-
-
+        if (encodedText.length() == text.length()) {
+            System.out.println(encodedText);
+        } else {
+            System.out.println("Podałeś nieprawidłowy znak!!!");
+        }
     }
 }
