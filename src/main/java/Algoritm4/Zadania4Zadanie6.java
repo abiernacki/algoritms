@@ -9,7 +9,7 @@ tj. ’a’ – ’z’ (26 znaków) oraz spacji.
  */
 
 
-package zadania4zadanie6;
+package Algoritm4;
 
 import java.util.Scanner;
 
@@ -24,8 +24,10 @@ public class Zadania4Zadanie6 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Podaj łańcuch znaków do zaszyfrowania:");
         String text = scanner.nextLine();
+        text = text.toLowerCase();
         System.out.println("Podaj przesunięcie:");
         int code = scanner.nextInt();
+
 
         char[] textDivided = text.toCharArray();
 
