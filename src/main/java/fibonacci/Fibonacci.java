@@ -6,7 +6,11 @@ public class Fibonacci {
 
         int n = 19;
 
-        System.out.println(f(n));
+        int suma = 0;
+        for (int i = 0; i <= n; i++) {
+            suma += f(i);
+        }
+        System.out.println(suma);
     }
 
 
